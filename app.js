@@ -37,5 +37,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
+// db connection
+let db =require("./models/connect")
 module.exports = app;
